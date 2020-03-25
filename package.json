@@ -1,0 +1,54 @@
+{
+	"name": "gitachange",
+	"version": "0.0.0",
+	"description": "execute git add && git commit in single command",
+	"license": "MIT",
+	"repository": "abakermi/gitachange",
+	"author": {
+		"name": "Abdelhak Akermi",
+		"email": "abdelhak.akermi@gmail.com"
+	},
+	"bin": "cli/cli.js",
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"lint": "eslint --fix ./**/*.js",
+		"test": "ava"
+	},
+	"main": "lib/index.js",
+	"files": [
+		"lib/index.js",
+		"cli/index.js"
+	],
+	"keywords": [
+		"git",
+		"commit",
+		"add",
+		"cli"
+	],
+	"dependencies": {
+		"execa": "^4.0.0",
+		"listr": "^0.14.3",
+		"log-symbols": "^3.0.0",
+		"meow": "^6.1.0"
+	},
+	"devDependencies": {
+		"ava": "^2.1.0",
+		"eslint": "^6.8.0",
+		"eslint-config-standard": "^14.1.1",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"tmp": "^0.1.0"
+	},
+	"ava": {
+		"files": [
+			"tests/**/*.spec.js"
+		]
+	}
+}
