@@ -1,6 +1,6 @@
 {
 	"name": "gitachange",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "execute git add && git commit in single command",
 	"license": "MIT",
 	"repository": "abakermi/gitachange",
